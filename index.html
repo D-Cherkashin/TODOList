@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>TO-DO LIST</title>
+        <link rel="shortcut icon" href="img/icon.png">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="JS/app.js" defer></script>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="discription" content="To-do list">
+        <meta name="keywords" content="to-do list project">
+        <meta name="author" content="Danila Cherkashin">
+    </head>
+    <body>
+        <header class="header">
+            <div class="contain_hd">
+                <nav class="nav">
+                    <a href="#!" class="logo">
+                        <img src="img/icon.png" alt="D. Cherkashin logo" width="43" height="51">
+                    </a>
+                </nav>
+                <div class="header-row">
+                    <div class="header-content">
+                        <h1 class="header-heading">TO-DO LIST</h1>
+                    </div>
+                </div>
+                <div class="empty"></div>
+            </div>
+        </header>
+
+        <div class="con">
+        <main class="main">
+            <section class="content">
+              <div class="container_serv">
+                  <div class="content-row">
+                      <div class="search">
+                          <input id="search" type="search" placeholder="Поиск задач">
+                      </div>
+          
+                      <div class="sort">
+                          <form>
+                              <label>Сортировать по:</label>
+                              <select name="variants_of_sort" id="sort">
+                                  <option value="all">Все</option>
+                                  <option value="completed">Выполненные</option>
+                                  <option value="unfilled">Невыполненные</option>
+                                  <option value="new">Сначала новые</option>
+                                  <option value="old">Сначала старые</option>
+                              </select>
+                          </form>
+                      </div>
+                 </div>
+            </section>
+            <section class="todo">
+                <div class="to-do_list">
+                    <div class="cardMb-4">
+                        <ul id="tasksList" class="list-group list-group-flush"> </ul>
+                    </div>
+                    <div class="card_bg-light" >
+                        <div class="card-header">Добавить новую задачу</div>
+                        <div class="card-body">
+                            <form id="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="taskInput" placeholder="Текст задачи" required>
+                                </div>
+                                <button type="submit" class="btn-primary  btn-lg active">Добавить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="contacts">
+            <div class="contain_ft">
+                <div class="contacts-title">
+                    <h2 class="title-ft">Связаться</h2>
+                </div>
+                <div class="contacts-button">
+                    <a href="#!" class="btn">Связаться со мной</a>
+                </div>
+                <div class="contacts-social">
+                    <a href="#!"><img src="img/inst.png" alt="Instagram"></a>
+                </div>
+                <div class="contacts-footer">
+                    <p>Оставь оценку в<br>Instagram</p>
+                </div>
+            </div>
+          </footer>
+        </div>
+    </body>
+</html>
